@@ -1,0 +1,1 @@
+ansible-playbook playbook.yml -u ubuntu --private-key iac-devrocha-linux.pem -i hosts.yml

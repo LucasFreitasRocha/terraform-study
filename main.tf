@@ -16,8 +16,14 @@ provider "aws" {
 resource "aws_instance" "app_server" {
   ami           = "ami-0e86e20dae9224db8"
   instance_type = "t2.micro"
-  key_name = "iac-devrocha"
+  key_name = "iac-devrocha-linux"
+  # user_data = <<-EOF
+  #                #!/bin/bash
+  #                      cd /home/ubuntu
+  #                      echo "<h1>Feito com Terraform</h1>" > index.html
+  #                      nohup busybox httpd -f -p 8080 &
+  #                EOF
   tags = {
-    Name = "primeira instancia terraform"
+    Name = "terraform ansible python"
   }
 }
