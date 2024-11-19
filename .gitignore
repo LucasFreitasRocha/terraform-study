@@ -9,6 +9,8 @@
 *.tfstate
 *.tfstate.*
 *.pem
+*.pub
+.vscode
 
 # Crash log files
 crash.log
@@ -37,5 +39,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+**/key/**
 
 # End of https://www.toptal.com/developers/gitignore/api/terraform
